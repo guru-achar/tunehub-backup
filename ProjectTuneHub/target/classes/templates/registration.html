@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REGISTER</title>
+		<link rel=stylesheet type=text/css th:href="@{/registration.css}">
+	
+	</head>
+	<body>
+		
+		<div class="container">
+		<div id="register-form" class="form active">
+		<h2>Registration Form</h2>
+	
+		
+		<form action="register" method="post">
+			<label>Username: </label>
+			<input type="text" name="username">
+			<br />
+			<br />
+			
+			<label>E-mail: </label>
+			<input type="text" name="email">
+			<br />
+			<br />
+			
+			<label>Password: </label>
+			<input type="password" name="password">
+			<br />
+			<br />
+			
+			<label>Gender:</label><br />
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="other">Other
+			<br />
+			<br />
+			
+			<label>Role:</label><br />
+			<input type="radio" name="role" value="admin">Admin
+			<input type="radio" name="role" value="customer">Customer
+			<br />
+			<br />
+			
+			<label>Address: </label>
+			<textarea name="address"></textarea>
+			<br />
+			<br />
+			
+			
+			<button type="submit">REGISTER</button>
+			<p>Already have an account? <a href="login" id="toggle-login">Login</a></p>
+			
+			
+			
+			
+			
+		</form>
+		
+		
+		
+	</body>
+	
+	
+	
+</html>
